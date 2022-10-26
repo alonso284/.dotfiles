@@ -32,3 +32,6 @@ ssh-add ~/.ssh/id_ed25519
 pbcopy < ~/.ssh/id_ed25519.pub
 
 # Paste on https://github.com/settings/ssh/new
+
+# Testing your SSH connection
+ssh -T git@github.com
