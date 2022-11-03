@@ -35,3 +35,25 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 # Testing your SSH connection
 ssh -T git@github.com
+
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install --cask firefox
+
+brew install --cask sublime-text
+echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
+
+brew install --cask visual-studio-code
+cat << EOF >> ~/.zprofile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+
+brew install --cask keepassxc
+
+brew install --cask basictex
+open /usr/local/Caskroomasictex/2022.0314/mactex-basictex-20220314.pkg
+
+brew install rust
+
