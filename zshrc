@@ -11,10 +11,16 @@ alias ls='ls -lAFh'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Add Locations to $PATH Variable
+# Add TeX (pdftex)
+export PATH="/Library/TeX/texbin/:$PATH"
 # Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 # Add Sublime Text 3 (subl)
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+# Add Firefow (firefox)
+# export PATH="$PATH:/Applications/Firefox.app/Contents/MacOS"
+export PATH="/Applications/Firefox.app/Contents/MacOS:$PATH"
 
 # Write Handy Functions
 cnr(){
