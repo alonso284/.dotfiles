@@ -12,3 +12,6 @@
 	path = vscode/extensions/ritwickdey.liveserver-5.7.9
 	url = https://github.com/ritwickdey/vscode-live-server
 	ignore = dirty
+[submodule "vscode/extensions/prettier-vscode"]
+	path = vscode/extensions/prettier-vscode
+	url = https://github.com/prettier/prettier-vscode
