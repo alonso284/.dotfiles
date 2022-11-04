@@ -3,7 +3,12 @@
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 
-[submodule "prettier"]
+[submodule "prettier-vscode"]
 	path = vscode/extensions/esbenp.prettier-vscode-9.9.0
 	url = https://github.com/prettier/prettier-vscode
+	ignore = dirty
+
+[submodule "vscode-live-server"]
+	path = vscode/extensions/ritwickdey.liveserver-5.7.9
+	url = https://github.com/ritwickdey/vscode-live-server
 	ignore = dirty
