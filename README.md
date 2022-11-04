@@ -9,3 +9,4 @@ I'm learning a ton about [dotfiles, command line use, Homebrew, zsh, git, macOS 
 - automatically install github
 - set ssh keys
 - set terminal font and colors
+- add vscode extensions as submodules
