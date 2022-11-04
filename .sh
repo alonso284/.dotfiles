@@ -56,4 +56,4 @@ brew install --cask basictex
 open /usr/local/Caskroomasictex/2022.0314/mactex-basictex-20220314.pkg
 
 brew install rust
-
+brew install --cask pokerstars

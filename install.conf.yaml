@@ -4,11 +4,16 @@
 
 - clean: ['~']
 
+- shell:
+  -
+    command: ./setup_homebrew.zsh 
+    stdout: true
+    stderr: true
+
 - link:
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
-
-- shell:
-  - sleep 5 
+    ~/.vscode: vscode/
+    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: SublimeText

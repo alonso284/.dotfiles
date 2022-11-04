@@ -4,11 +4,14 @@
 
 # Create Aliases
 alias ls='ls -lAFh'
+alias exa='exa -laFh'
 
 # Customize Prompt(s)
+PROMPT="%n %1~ $ "
 
 # Syntax highlighting for man pages using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Add Locations to $PATH Variable
 # Add TeX (pdftex)

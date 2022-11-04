@@ -8,3 +8,4 @@ I'm learning a ton about [dotfiles, command line use, Homebrew, zsh, git, macOS 
 - vsCode settings file
 - automatically install github
 - set ssh keys
+- set terminal font and colors
