@@ -4,9 +4,10 @@ I'm learning a ton about [dotfiles, command line use, Homebrew, zsh, git, macOS 
 
 # TODO
 - Configure Password Manager
-- Subl settings file
-- vsCode settings file
 - automatically install github
 - set ssh keys
 - set terminal font and colors
-- add vscode extensions as submodules
+- Uninstall AppStore unused apps
+- remove vscode/extension
+- remove vim/packaged
+- automate package install with cim
