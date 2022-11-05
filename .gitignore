@@ -1,2 +1,4 @@
 vim/.netrwhist
 Brewfile.lock.json
+vscode/extensions/*
+vim/plugged/*

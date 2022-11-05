@@ -1,3 +1,8 @@
 {
 	"font_size": 12,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Nord.sublime-color-scheme",
 }
