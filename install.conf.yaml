@@ -6,10 +6,6 @@
 
 - shell:
   -
-    command: ./setup_SublimeText.zsh 
-    stdout: true
-    stderr: true
-  -
     command: ./setup_homebrew.zsh 
     stdout: true
     stderr: true
@@ -21,6 +17,11 @@
     command: ./setup_vim.zsh
     stdout: true
     stderr: true
+  -
+    command: ./setup_SublimeText.zsh 
+    stdout: true
+    stderr: true
+
 
 - link:
     ~/.vim: vim
