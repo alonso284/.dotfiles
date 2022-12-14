@@ -1,5 +1,0 @@
-echo "\n[Installing VSCode extensions]\n"
-
-code --uninstall-extension esbenp.prettier-vscode
-code --uninstall-extension ritwickdey.LiveServer
-code --uninstall-extension Tyriar.lorem-ipsum

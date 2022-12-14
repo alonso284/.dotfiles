@@ -5,6 +5,7 @@
 # Create Aliases
 alias ls='ls -lAFh'
 alias exa='exa -laFh'
+alias bbd='brew bundle dump --force --describe'
 
 # Customize Prompt(s)
 PROMPT="%n %1~ $ "

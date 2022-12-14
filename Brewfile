@@ -7,14 +7,28 @@ tap "homebrew/services"
 brew "bat"
 # Command-line tool for Codeforces contests
 brew "cf-tool"
+# GNU Emacs text editor
+brew "emacs"
 # Modern replacement for 'ls'
 brew "exa"
+# Distributed revision control system
+brew "git", link: false
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Mac App Store command-line interface
 brew "mas"
+# Memory training application
+cask "anki"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
+# Cryptocurrency exchange
+cask "binance"
+# Voice and text chat software
+cask "discord"
+# Desktop wallet for cryptocurrency assets
+cask "exodus"
+# Web browser
+cask "firefox"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 # Free and open-source image editor
@@ -31,13 +45,18 @@ cask "obs"
 cask "omnidisksweeper"
 # Free-to-play online poker
 cask "pokerstars"
+# Collaboration platform for API development
+cask "postman"
+# Team communication and collaboration software
+cask "slack"
 # Music streaming service
 cask "spotify"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Open-source code editor
 cask "visual-studio-code"
-mas "AdBlock", id: 1402042596
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "Dashlane", id: 517914548
 mas "GarageBand", id: 682658836
 mas "Hex Fiend", id: 1342896380

@@ -1,21 +1,19 @@
 "Plugins
 call plug#begin()
-Plug 'tibabit/vim-templates'
-Plug 'junegunn/vim-easy-align'
+" Plug 'tibabit/vim-templates'
+" Plug 'junegunn/vim-easy-align'
 
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'preservim/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'ryanoasis/vim-devicons'
 
 Plug 'gruvbox-community/gruvbox'
 
-Plug 'jiangmiao/auto-pairs'
-
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'jiangmiao/auto-pairs'
 
 Plug 'tpope/vim-commentary'
 
-Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-surround'
 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -31,8 +29,9 @@ set softtabstop=0
 syntax on
 set autoindent
 set encoding=UTF-8
-colorscheme gruvbox
-let g:tmpl_auto_initialize=0
+" set spell spelllang=en_us
+" colorscheme gruvbox
+" let g:tmpl_auto_initialize=0
 let g:snipMate = { 'snippet_version' : 1 }
 
 " HARD MODE
@@ -58,7 +57,7 @@ inoremap <PageUp> <C-o>:echo "No PageUp for you!"<CR>
 " ESC alternatives
 inoremap lk <ESC>
 " NerdTree
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" nnoremap <leader>n :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTree<CR>
+" nnoremap <C-t> :NERDTreeToggle<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
