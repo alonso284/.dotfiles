@@ -4,16 +4,6 @@
 
 - clean: ['~']
 
-- shell:
-  -
-    command: ./setup_zsh.zsh 
-    stdout: true
-    stderr: true
-  -
-    command: ./setup_homebrew.zsh 
-    stdout: true
-    stderr: true
-
 - link:
     ~/.vim: vim
     ~/.vimrc: vimrc
@@ -21,4 +11,6 @@
     ~/.zshenv: zshenv
     ~/.gitconfig: gitconfig
     ~/.vscode: vscode/
-    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings: SublimeText
+    ~/.cf: cf/
+    ~/template: template/
+    ~/.config: config/

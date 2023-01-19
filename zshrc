@@ -25,6 +25,8 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 # Add Firefow (firefox)
 # export PATH="$PATH:/Applications/Firefox.app/Contents/MacOS"
 export PATH="/Applications/Firefox.app/Contents/MacOS:$PATH"
+# Add markdown table of contents creatio command
+export PATH="/Users/alonso284/GitHub/MarkDown-Table-Of-Contents-Generator:$PATH"
 
 # Write Handy Functions
 cnr(){

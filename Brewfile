@@ -7,6 +7,8 @@ tap "homebrew/services"
 brew "bat"
 # Command-line tool for Codeforces contests
 brew "cf-tool"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # GNU Emacs text editor
 brew "emacs"
 # Modern replacement for 'ls'
@@ -15,8 +17,16 @@ brew "exa"
 brew "git", link: false
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Improved top (interactive process viewer)
+brew "htop"
 # Mac App Store command-line interface
 brew "mas"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
+# Platform built on V8 to build network applications
+brew "node"
+# Safe, concurrent, practical language
+brew "rust"
 # Memory training application
 cask "anki"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
@@ -37,6 +47,8 @@ cask "gimp"
 cask "gitkraken"
 # Password manager app
 cask "keepassxc"
+# Sandbox construction video game
+cask "minecraft"
 # VPN client
 cask "mullvadvpn"
 # Open-source software for live streaming and screen recording
