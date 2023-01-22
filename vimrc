@@ -3,18 +3,18 @@ call plug#begin()
 " Plug 'tibabit/vim-templates'
 " Plug 'junegunn/vim-easy-align'
 
-" Plug 'preservim/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'ryanoasis/vim-devicons'
+" NerdTree and others
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
 
-Plug 'gruvbox-community/gruvbox'
-
-" Plug 'jiangmiao/auto-pairs'
-
-Plug 'tpope/vim-commentary'
-
+" Surround
 Plug 'tpope/vim-surround'
 
+" Commentary
+Plug 'tpope/vim-commentary'
+
+" Snippets
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
@@ -29,12 +29,18 @@ set softtabstop=0
 syntax on
 set autoindent
 set encoding=UTF-8
-" set spell spelllang=en_us
-" colorscheme gruvbox
-" let g:tmpl_auto_initialize=0
+
+" ESC alternatives
+inoremap lk <ESC>
+
+" Snipmate config
 let g:snipMate = { 'snippet_version' : 1 }
 
-" HARD MODE
+" Surround congif
+au Filetype cpp let b:AutoPairs = {"/*": "*/"}
+au FileType html let b:AutoPairs = {'<!--' : '-->'}
+
+" HARD MODE Dont allow arrows
 nnoremap <Left> :echo "No Left for you!"<CR>
 nnoremap <Right> :echo "No Right for you!"<CR>
 nnoremap <Down> :echo "No Down for you!"<CR>
@@ -54,10 +60,12 @@ inoremap <Up> <C-o>:echo "No Up for you!"<CR>
 inoremap <PageDown> <C-o>:echo "No PageDown for you!"<CR>
 inoremap <PageUp> <C-o>:echo "No PageUp for you!"<CR>
 
-" ESC alternatives
-inoremap lk <ESC>
-" NerdTree
-" nnoremap <leader>n :NERDTreeFocus<CR>
-" nnoremap <C-n> :NERDTree<CR>
-" nnoremap <C-t> :NERDTreeToggle<CR>
-" nnoremap <C-f> :NERDTreeFind<CR>
+" NerdTree Configurations
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
