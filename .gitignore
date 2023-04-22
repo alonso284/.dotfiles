@@ -1,6 +1,17 @@
-vim/.netrwhist
-Brewfile.lock.json
+# Vscode
 vscode/extensions/*
+
+# VIM
 vim/plugged/*
+vim/.netrwhist
 cf/session
-.DS_Store
+
+# rustup
+rustup/downloads/*
+rustup/toolchains/*
+rustup/update-hashes/*
+
+# Others
+Brewfile.lock.json
+ssh_connections
+*/.DS_Store

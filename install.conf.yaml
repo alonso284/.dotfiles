@@ -9,7 +9,9 @@
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
+    ~/.Brewfile: Brewfile
     ~/.gitconfig: gitconfig
+    ~/.rustup: rustup/
     ~/.vscode: vscode/
     ~/.cf: cf/
     ~/template: template/

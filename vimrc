@@ -1,7 +1,6 @@
 "Plugins
 call plug#begin()
-" Plug 'tibabit/vim-templates'
-" Plug 'junegunn/vim-easy-align'
+Plug 'rust-lang/rust.vim'
 
 " NerdTree and others
 Plug 'preservim/nerdtree'
@@ -18,6 +17,9 @@ Plug 'tpope/vim-commentary'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
+
+Plug 'nordtheme/vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Visual Configurations
@@ -69,3 +71,5 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 " Open the existing NERDTree on each new tab.
 autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+
+colorscheme default

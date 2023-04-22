@@ -27,6 +27,7 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 export PATH="/Applications/Firefox.app/Contents/MacOS:$PATH"
 # Add markdown table of contents creatio command
 export PATH="/Users/alonso284/GitHub/MarkDown-Table-Of-Contents-Generator:$PATH"
+export PATH=":/Users/alonso284/.cargo/bin:$PATH"
 
 # Write Handy Functions
 cnr(){
@@ -40,9 +41,3 @@ c(){
 mkcd(){
 	mkdir -p "$@" && cd "$_"
 }
-
-# Use ZSH Plugins
-
-# ...and Other Surprises
-
-
