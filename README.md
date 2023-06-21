@@ -17,6 +17,9 @@
 
 # How to...
 
+- [Minecraft Server](https://www.minecraft.net/en-us/download/server)
+- [Run commands in background with `screen`](https://linuxize.com/post/how-to-use-linux-screen/)
+- [Setup NGINX](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 - [Manage vim plugins](https://github.com/junegunn/vim-plug)
 - [Connect to github with SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 - [Install Rust LSP](https://rust-analyzer.github.io/manual.html#installation)
@@ -28,7 +31,7 @@
 - [Latex Symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
 
 # Brewfile options
-- `brew bundle dump -f --cask --mas --tage --describe` update Brewfile
+- `brew bundle dump -f --cask --formula --mas --describe` update Brewfile
 - `brew bundle --global --cleanup` update packages
 
 # Add LightSail SSH KEY
