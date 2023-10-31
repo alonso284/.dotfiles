@@ -29,6 +29,7 @@
 - [Vim](https://vim.rtorr.com/)
 - [Latex](http://www.utc.fr/~jlaforet/Suppl/latex-cheatsheet.pdf)
 - [Latex Symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
+- [SQL](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
 
 # Brewfile options
 - `brew bundle dump -f --cask --formula --mas --describe` update Brewfile
@@ -44,3 +45,9 @@
 - rustup-init (once brew packages are installed)
 - npm -g ______ (nmp global packages are inside the nmp folder)
 - pip3 dependencies
+
+# TODO
+
+- pip dependencies
+- npm dependencies
+- cargo/rustup tools

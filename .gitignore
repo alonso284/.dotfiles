@@ -15,3 +15,4 @@ rustup/update-hashes/*
 Brewfile.lock.json
 ssh_connections
 */.DS_Store
+.DS_Store

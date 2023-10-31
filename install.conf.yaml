@@ -13,6 +13,6 @@
     ~/.gitconfig: gitconfig
     ~/.rustup: rustup/
     ~/.vscode: vscode/
-    ~/.cf: cf/
+    ~/cf: cf/
     ~/template: template/
     ~/.config: config/

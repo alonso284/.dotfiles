@@ -3,7 +3,6 @@
 # Change ZSH Options
 
 # Create Aliases
-alias ls='ls -lAFh'
 alias exa='exa -laFh'
 alias bbd='brew bundle dump --force --describe'
 
@@ -28,14 +27,11 @@ export PATH="/Applications/Firefox.app/Contents/MacOS:$PATH"
 # Add markdown table of contents creatio command
 export PATH="/Users/alonso284/GitHub/MarkDown-Table-Of-Contents-Generator:$PATH"
 export PATH=":/Users/alonso284/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 
 # Write Handy Functions
-cnr(){
-	g++ -std=c++17 "$@" && ./a.out;
-}
-
-c(){
-	g++ -std=c++17 "$@";
+cpp(){
+	g++ -std=c++20 "$@";
 }
 
 mkcd(){
