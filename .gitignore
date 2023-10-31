@@ -6,11 +6,6 @@ vim/plugged/*
 vim/.netrwhist
 cf/session
 
-# rustup
-rustup/downloads/*
-rustup/toolchains/*
-rustup/update-hashes/*
-
 # Others
 Brewfile.lock.json
 ssh_connections
