@@ -45,9 +45,3 @@
 - rustup-init (once brew packages are installed)
 - npm -g ______ (nmp global packages are inside the nmp folder)
 - pip3 dependencies
-
-# TODO
-
-- pip dependencies
-- npm dependencies
-- cargo/rustup tools
