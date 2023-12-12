@@ -1,3 +1,13 @@
+# Check if neofetch is installed
+if command -v neofetch &> /dev/null; then
+    # Check if it is the first open terminal
+    if [ "$SHLVL" -eq 1 ]; then
+        neofetch
+    fi
+else
+    echo "neofetch is not installed. Please install it to use this feature."
+fi
+
 # Set Variables
 
 # Change ZSH Options
