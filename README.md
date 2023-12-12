@@ -24,6 +24,7 @@
 - [Connect to github with SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 - [Install Rust LSP](https://rust-analyzer.github.io/manual.html#installation)
 - [Install Rust Yew](https://yew.rs/docs/getting-started/introduction)
+- [Debian Install](https://www.debian.org/CD/netinst/)
 
 # Cheat sheets
 - [Vim](https://vim.rtorr.com/)
@@ -37,5 +38,9 @@
 
 # Other installations
 - rustup-init (once brew packages are installed)
+    - `wasm32-unknown-unknown`
+    - `x86_64-apple-darwin`
 - npm -g ______ (nmp global packages are inside the nmp folder)
+    - `http-server`
+    - `nodemon`
 - pip3 dependencies
