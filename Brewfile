@@ -20,6 +20,8 @@ brew "bat"
 brew "cf-tool"
 # Cross-platform make
 brew "cmake"
+# Console Matrix
+brew "cmatrix"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Modern replacement for 'ls'
@@ -32,6 +34,8 @@ brew "gcc"
 brew "libavif"
 # Graphics library to dynamically manipulate images
 brew "gd"
+# GNU debugger
+brew "gdb"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -60,6 +64,8 @@ brew "openblas"
 brew "postgresql@14"
 # Software environment for statistical computing
 brew "r"
+# Command-line Kanban board/task manager with support for Trello
+brew "taskell"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Anonymizing overlay network for TCP
@@ -116,13 +122,13 @@ cask "virtualbox"
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "AdGuard for Safari", id: 1440147259
 mas "Endel", id: 1346247457
 mas "GarageBand", id: 682658836
 mas "Hex Fiend", id: 1342896380
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "NiBoard", id: 1511409657
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Playgrounds", id: 1496833156
-mas "WhatsApp", id: 1147396723
+mas "‎WhatsApp", id: 310633997

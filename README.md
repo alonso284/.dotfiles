@@ -35,12 +35,6 @@
 - `brew bundle dump -f --cask --formula --mas --describe` update Brewfile
 - `brew bundle --global --cleanup` update packages
 
-# Add LightSail SSH KEY
-- Download ssh key from lightsail instance configurations page
-- `mv $PATH/LightsailDefaultKey-<region>.pem ~/.ssh`
-- `chmod 400 ~/.ssh/LightsailDefaultKey-<region>.pem`
-- `ssh <user>@<ip_address> -i .ssh/LightsailDefaultKey-<region>.pem`
-
 # Other installations
 - rustup-init (once brew packages are installed)
 - npm -g ______ (nmp global packages are inside the nmp folder)
