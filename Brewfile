@@ -40,6 +40,8 @@ brew "gdb"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Multi-platform library for OpenGL applications
+brew "glfw"
 # Improved top (interactive process viewer)
 brew "htop"
 # Postgres C API library
