@@ -9,6 +9,10 @@ else
 fi
 
 # Set Variables
+if type rg &> /dev/null; then
+  export FZF_DEFAULT_COMMAND='rg --files'
+  export FZF_DEFAULT_OPTS='-m'
+fi
 
 # Change ZSH Options
 
@@ -47,3 +51,7 @@ cpp(){
 mkcd(){
 	mkdir -p "$@" && cd "$_"
 }
+
+# bun
+export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

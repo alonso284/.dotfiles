@@ -25,6 +25,7 @@
 - [Install Rust LSP](https://rust-analyzer.github.io/manual.html#installation)
 - [Install Rust Yew](https://yew.rs/docs/getting-started/introduction)
 - [Debian Install](https://www.debian.org/CD/netinst/)
+- [Manually Install cf-tool](https://codeforces.com/blog/entry/66552)
 
 # Cheat sheets
 - [Vim](https://vim.rtorr.com/)

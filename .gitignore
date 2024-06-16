@@ -9,5 +9,15 @@ cf/session
 # Others
 Brewfile.lock.json
 ssh_connections
+config/wireshark/*
 */.DS_Store
 .DS_Store
+
+# Config
+config/github-copilot/*
+
+# Vim files
+*.swp
+
+# Node
+node_modules
