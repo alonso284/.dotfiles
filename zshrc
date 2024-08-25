@@ -17,7 +17,7 @@ fi
 # Change ZSH Options
 
 # Create Aliases
-alias exa='exa -laFh'
+alias eza='eza -lah'
 alias bbd='brew bundle dump --force --describe'
 
 # Customize Prompt(s)

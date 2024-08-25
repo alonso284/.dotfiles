@@ -1,6 +1,7 @@
 # UNIX configuration files
 
 # Manuel Configurations
+- Run `sudo xcode-select --install`
 - Run `./install`
 - Run `./setup_xcode.zsh`
 - Run `./setup_homebrew.zsh`
@@ -11,8 +12,7 @@
 	- Keyboard > Use Option as Meta key
 - `cf config`
 - `mullvad account login`
-- `aws config`
-- github ssh keys (for terminal and gitkraken)
+- Set up github ssh keys
 - Set up MacOS configuration
 
 # How to...
