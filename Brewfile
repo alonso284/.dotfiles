@@ -1,5 +1,9 @@
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Core application library for C
+brew "glib"
 # Zstandard is a real-time compression algorithm
 brew "zstd"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -8,10 +12,6 @@ brew "curl"
 brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
-# GNU debugger
-brew "gdb"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -20,6 +20,8 @@ brew "git"
 brew "glfw"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Improved top (interactive process viewer)
 brew "htop"
 # Featureful UNIX password cracker
@@ -38,18 +40,28 @@ brew "netcat"
 brew "nmap"
 # Platform built on V8 to build network applications
 brew "node"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # User interface to the TELNET protocol
 brew "telnet"
 # Anonymizing overlay network for TCP
 brew "tor"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker"
+# Online diagram software
+cask "drawio"
 # Web browser
 cask "firefox"
 cask "font-hack-nerd-font"
@@ -61,6 +73,8 @@ cask "keycombiner"
 cask "mullvadvpn"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Free-to-play online poker
+cask "pokerstars"
 # Collaboration platform for API development
 cask "postman"
 # Tool that provides consistent, highly configurable symbols for apps
@@ -69,8 +83,6 @@ cask "sf-symbols"
 cask "sublime-text"
 # Web browser focusing on security
 cask "tor-browser"
-# Virtualiser for x86 hardware
-cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
 # Network protocol analyzer
@@ -78,6 +90,7 @@ cask "wireshark"
 mas "AdGuard for Safari", id: 1440147259
 mas "Developer", id: 640199958
 mas "Endel", id: 1346247457
+mas "Expenses", id: 1492055171
 mas "GarageBand", id: 682658836
 mas "Hex Fiend", id: 1342896380
 mas "iMovie", id: 408981434
@@ -89,4 +102,3 @@ mas "Streaks", id: 963034692
 mas "TestFlight", id: 899247664
 mas "Transporter", id: 1450874784
 mas "Xcode", id: 497799835
-mas "‎WhatsApp", id: 310633997

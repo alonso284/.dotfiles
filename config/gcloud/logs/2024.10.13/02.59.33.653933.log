@@ -1,0 +1,46 @@
+2024-10-13 02:59:33,654 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts']
+2024-10-13 02:59:33,655 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts', 'repositories']
+2024-10-13 02:59:33,707 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts', 'repositories', 'create']
+2024-10-13 02:59:33,713 DEBUG    root            Running [gcloud.artifacts.repositories.create] with arguments: [--description: "Docker repository", --location: "us-west2", --repository-format: "docker", REPOSITORY: "quickstart-docker-repo"]
+2024-10-13 02:59:33,729 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-10-13 02:59:34,250 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "POST /v1/projects/gcp-banorte-hackaton-team-39/locations/us-west2/repositories?alt=json&repositoryId=quickstart-docker-repo HTTP/1.1" 409 None
+2024-10-13 02:59:34,255 DEBUG    root            (gcloud.artifacts.repositories.create) ALREADY_EXISTS: the repository already exists
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 842, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/yaml_command_translator.py", line 919, in Run
+    ref, response = self._CommonRun(args)
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/yaml_command_translator.py", line 455, in _CommonRun
+    response = method.Call(
+               ^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/registry.py", line 341, in Call
+    return request_func(global_params=global_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/registry.py", line 404, in RequestFunc
+    return method(request, global_params=global_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/artifactregistry/v1/artifactregistry_v1_client.py", line 1609, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/496.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpConflictError: HttpError accessing <https://artifactregistry.googleapis.com/v1/projects/gcp-banorte-hackaton-team-39/locations/us-west2/repositories?alt=json&repositoryId=quickstart-docker-repo>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sun, 13 Oct 2024 08:59:34 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 409}>, content <{
+  "error": {
+    "code": 409,
+    "message": "the repository already exists",
+    "status": "ALREADY_EXISTS"
+  }
+}
+>
+2024-10-13 02:59:34,264 ERROR    root            (gcloud.artifacts.repositories.create) ALREADY_EXISTS: the repository already exists

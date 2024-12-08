@@ -1,0 +1,7 @@
+2024-10-13 02:56:39,275 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-10-13 02:56:39,278 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
+2024-10-13 02:56:39,278 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "project"]
+2024-10-13 02:56:39,278 DEBUG    root            Chosen display Format:value(.)
+2024-10-13 02:56:39,278 INFO     root            Display format: "value(.)"
+2024-10-13 02:56:39,278 INFO     ___FILE_ONLY___ gcp-banorte-hackaton-team-39
+

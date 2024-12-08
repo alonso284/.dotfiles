@@ -1,0 +1,8 @@
+[core]
+account = hackaton-banorte-user-39@latgkepod.joonix.net
+project = gcp-banorte-hackaton-team-39
+
+[compute]
+zone = us-east1-b
+region = us-east1
+

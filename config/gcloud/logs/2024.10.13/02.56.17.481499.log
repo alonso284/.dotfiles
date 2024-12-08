@@ -1,0 +1,21 @@
+2024-10-13 02:56:17,482 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts']
+2024-10-13 02:56:17,484 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts', 'repositories']
+2024-10-13 02:56:17,597 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts', 'repositories', 'create']
+2024-10-13 02:56:17,606 DEBUG    root            Running [gcloud.artifacts.repositories.create] with arguments: [--description: "Docker repository", --location: "us-west2", --repository-format: "docker", REPOSITORY: "quickstart-docker-repo"]
+2024-10-13 02:56:17,623 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-10-13 02:56:18,263 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "POST /v1/projects/gcp-banorte-hackaton-team-39/locations/us-west2/repositories?alt=json&repositoryId=quickstart-docker-repo HTTP/1.1" 200 None
+2024-10-13 02:56:18,269 INFO     ___FILE_ONLY___ Create request issued for: [quickstart-docker-repo]
+
+2024-10-13 02:56:18,270 INFO     ___FILE_ONLY___ Waiting for operation [projects/gcp-banorte-hackaton-team-39/locations/us-west2/operations/2fba8248-d0f7-44b2-aa0e-5f852176bc76] to complete...
+2024-10-13 02:56:19,288 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-10-13 02:56:19,830 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "GET /v1/projects/gcp-banorte-hackaton-team-39/locations/us-west2/operations/2fba8248-d0f7-44b2-aa0e-5f852176bc76?alt=json HTTP/1.1" 200 None
+2024-10-13 02:56:22,413 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-10-13 02:56:23,010 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "GET /v1/projects/gcp-banorte-hackaton-team-39/locations/us-west2/operations/2fba8248-d0f7-44b2-aa0e-5f852176bc76?alt=json HTTP/1.1" 200 None
+2024-10-13 02:56:26,480 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-10-13 02:56:27,003 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "GET /v1/projects/gcp-banorte-hackaton-team-39/locations/us-west2/operations/2fba8248-d0f7-44b2-aa0e-5f852176bc76?alt=json HTTP/1.1" 200 None
+2024-10-13 02:56:27,053 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-10-13 02:56:27,618 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "GET /v1/projects/gcp-banorte-hackaton-team-39/locations/us-west2/repositories/quickstart-docker-repo?alt=json HTTP/1.1" 200 None
+2024-10-13 02:56:27,622 INFO     ___FILE_ONLY___ Created repository [quickstart-docker-repo].
+
+2024-10-13 02:56:27,623 DEBUG    root            Chosen display Format:none
+2024-10-13 02:56:27,624 INFO     root            Display format: "none"

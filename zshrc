@@ -19,6 +19,7 @@ fi
 # Create Aliases
 alias eza='eza -lah'
 alias bbd='brew bundle dump --force --describe'
+alias cf='cf-tool'
 
 # Customize Prompt(s)
 PROMPT="%n %1~ $ "
@@ -42,6 +43,8 @@ export PATH="/Applications/Firefox.app/Contents/MacOS:$PATH"
 export PATH="/Users/alonso284/GitHub/MarkDown-Table-Of-Contents-Generator:$PATH"
 export PATH=":/Users/alonso284/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+# GOPATH
+export PATH="/Users/alonso284/go/bin:$PATH"
 
 # Write Handy Functions
 cpp(){
@@ -51,7 +54,4 @@ cpp(){
 mkcd(){
 	mkdir -p "$@" && cd "$_"
 }
-
-# bun
-export BUN_INSTALL="$HOME/Library/Application Support/reflex/bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
