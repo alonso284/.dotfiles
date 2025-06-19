@@ -14,8 +14,6 @@ if type rg &> /dev/null; then
   export FZF_DEFAULT_OPTS='-m'
 fi
 
-# Change ZSH Options
-
 # Create Aliases
 alias eza='eza -lah'
 alias bbd='brew bundle dump --force --describe'
@@ -32,12 +30,10 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # Add TeX (pdftex)
 export PATH="/Library/TeX/texbin/:$PATH"
 # Add Visual Studio Code (code)
-# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 # Add Sublime Text 3 (subl)
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 # Add Firefow (firefox)
-# export PATH="$PATH:/Applications/Firefox.app/Contents/MacOS"
 export PATH="/Applications/Firefox.app/Contents/MacOS:$PATH"
 # Add markdown table of contents creatio command
 export PATH="/Users/alonso284/GitHub/MarkDown-Table-Of-Contents-Generator:$PATH"
@@ -45,6 +41,8 @@ export PATH=":/Users/alonso284/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 # GOPATH
 export PATH="/Users/alonso284/go/bin:$PATH"
+# JAVA
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # Write Handy Functions
 cpp(){
@@ -54,4 +52,3 @@ cpp(){
 mkcd(){
 	mkdir -p "$@" && cd "$_"
 }
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

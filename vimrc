@@ -28,6 +28,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
+" Opt-in into copilot
+let g:copilot_enabled = 0
+
 " Visual Configurations
 set number
 set relativenumber
