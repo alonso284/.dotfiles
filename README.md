@@ -45,3 +45,8 @@
     - `http-server`
     - `nodemon`
 - pip3 dependencies
+
+# Linux distributions
+- [Debian](https://www.debian.org/distrib/)
+- [Kali](https://www.kali.org/downloads/)
+- [Ubuntu](https://ubuntu.com/download)
