@@ -66,8 +66,6 @@ cask "container"
 cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerised applications and microservices
-cask "docker"
 # Online diagram software
 cask "drawio"
 # Web browser
@@ -75,8 +73,6 @@ cask "firefox"
 cask "font-hack-nerd-font"
 # Free and open-source image editor
 cask "gimp"
-# GUI for the Dynamips Cisco router emulator
-cask "gns3"
 # Vector graphics editor
 cask "inkscape"
 # Instant shortcut lookup
