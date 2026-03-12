@@ -4,20 +4,22 @@ brew "zstd"
 brew "bat"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Modern, maintained replacement for ls
 brew "eza"
 # OpenType text shaping engine
 brew "harfbuzz"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -42,12 +44,16 @@ brew "neofetch"
 brew "netcat"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Development kit for the Java programming language
 brew "openjdk"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # User interface to the TELNET protocol
 brew "telnet"
 # Anonymizing overlay network for TCP
@@ -58,6 +64,8 @@ brew "wireshark"
 brew "yt-dlp"
 # Memory training application
 cask "anki"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Create and run Linux containers using lightweight virtual machines
@@ -75,8 +83,6 @@ cask "font-hack-nerd-font"
 cask "gimp"
 # Vector graphics editor
 cask "inkscape"
-# Instant shortcut lookup
-cask "keycombiner"
 # Sandbox construction video game
 cask "minecraft"
 # VPN client
@@ -95,9 +101,11 @@ cask "sketch"
 cask "sublime-text"
 # Web browser focusing on security
 cask "tor-browser"
-# Virtualiser for x86 hardware
+# Virtualiser for arm64 hardware
 cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "webex"
+# Video communication and virtual meeting platform
+cask "zoom"

@@ -16,8 +16,11 @@ fi
 
 # Create Aliases
 alias eza='eza -lah'
+alias exa='eza'
 alias bbd='brew bundle dump --force --describe'
 alias cf='cf-tool'
+alias c='clang++ -Wall -Wconversion -Wfatal-errors -g -std=c++17 \
+	-fsanitize=undefined,address'
 
 # Customize Prompt(s)
 PROMPT="%n %1~ $ "
@@ -51,4 +54,52 @@ cpp(){
 
 mkcd(){
 	mkdir -p "$@" && cd "$_"
+}
+
+mkcpp() {
+    TEMPLATE=~/template/io.cpp
+
+    # directory mode
+    if [ "$1" = "-d" ] || [ "$1" = "--dir" ]; then
+        if [ -z "$2" ]; then
+            echo "Usage: mkcpp -d <dirname>"
+            return 1
+        fi
+
+        DIR="$2"
+
+        # create directory if not exists
+        mkcd "$DIR"
+
+        # files to generate (a.cpp ... m.cpp)
+        for f in {a..m}; do
+            cp "$TEMPLATE" "$f.cpp"
+        done
+
+        echo "Created directory '$DIR' with all files"
+        return 0
+    fi
+
+    # normal mode: mkcpp filename.cpp
+    if [ -z "$1" ]; then
+        echo "Usage: mkcpp <filename> OR mkcpp -d <dirname>"
+        return 1
+    fi
+
+    cp "$TEMPLATE" "$1"
+    echo "Created $1 from template."
+}
+
+qemu-snap() {
+  local img="$1"
+
+  if [[ -z "$img" ]]; then
+    echo "usage: qemu-snap <disk.img|disk.qcow2>"
+    return 1
+  fi
+
+  qemu-system-x86_64 \
+	  -m 16G \
+	  -drive file="$img",format=raw,snapshot=on \
+	  -cpu host
 }
