@@ -40,6 +40,9 @@ set softtabstop=0
 syntax on
 set autoindent
 set encoding=UTF-8
+set hlsearch
+set ignorecase
+set incsearch
 
 " FZF Configurations
 nnoremap <silent> <Leader>b :Buffers<CR>

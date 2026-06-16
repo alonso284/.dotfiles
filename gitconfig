@@ -1,3 +1,41 @@
+[include]
+	path = /Users/alonso284/office_git_configs_mac.config
 [user]
 	name = Alonso Huerta
 	email = alonso12_284@outlook.com
+	domain = t-alonsoh@microsoft.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+	interactive = auto
+	azreposCredentialType = oauth
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[http]
+	version = HTTP/1.1
+[scalar]
+	repo = /Volumes/Office/omr1/src
+[maintenance]
+	repo = /Volumes/Office/omr1/src
+[office]
+	nuget-cache = /Users/alonso284/NugetCache
+[safe]
+	directory = /Users/alonso284/GitHub/omr1/src
+	directory = /Volumes/Office/omr1/src
+[credential "azrepos:org/office"]
+	username = t-alonsoh@microsoft.com
+	azureAuthority = https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+[trace2]
+	eventnesting = 7
+[credential "azrepos:org/IdentityDivision"]
+	azureAuthority = https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47
+	username = t-alonsoh@microsoft.com
+[credential "azrepos:org/msblox"]
+	username = t-alonsoh@microsoft.com
+[mdk "import"]
+	applebaseline = true

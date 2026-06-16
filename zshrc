@@ -21,6 +21,16 @@ alias bbd='brew bundle dump --force --describe'
 alias cf='cf-tool'
 alias c='clang++ -Wall -Wconversion -Wfatal-errors -g -std=c++17 \
 	-fsanitize=undefined,address'
+alias clab='docker run --rm -it --privileged \
+    --network host \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /var/run/netns:/var/run/netns \
+    -v /etc/hosts:/etc/hosts \
+    -v /var/lib/docker/containers:/var/lib/docker/containers \
+    --pid="host" \
+    -v $(pwd):$(pwd) \
+    -w $(pwd) \
+    ghcr.io/srl-labs/clab bash'
 
 # Customize Prompt(s)
 PROMPT="%n %1~ $ "
@@ -103,3 +113,17 @@ qemu-snap() {
 	  -drive file="$img",format=raw,snapshot=on \
 	  -cpu host
 }
+
+export PATH="${PATH}:/Users/alonso284/.azureauth/0.9.2"
+
+# BEGIN Agency MANAGED BLOCK
+if [[ ":${PATH}:" != *":/Users/alonso284/.config/agency/CurrentVersion:"* ]]; then
+    export PATH="/Users/alonso284/.config/agency/CurrentVersion:${PATH}"
+fi
+# END Agency MANAGED BLOCK
+
+# BEGIN claude-cli MANAGED BLOCK
+if [[ ":${PATH}:" != *":/Users/alonso284/.claude-cli/CurrentVersion:"* ]]; then
+    export PATH="/Users/alonso284/.claude-cli/CurrentVersion:${PATH}"
+fi
+# END claude-cli MANAGED BLOCK
